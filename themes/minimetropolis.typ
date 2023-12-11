@@ -109,13 +109,16 @@
   set page(
     header: header,
     footer: footer,
-    margin: (top: 3em, bottom: 1em),
+    // margin: (top: 3em, bottom: 1em),
+    margin: (top: auto, bottom: auto),
     fill: m-extra-light-gray,
   )
 
   let content = {
     show: align.with(horizon)
-    show: pad.with(2em)
+    // show: align.with(top)
+    // show: pad.with(2em)
+    show: pad.with(left: 2em, bottom: 0pt, right: 0.5em)
     set text(fill: m-dark-teal)
     body 
   }
